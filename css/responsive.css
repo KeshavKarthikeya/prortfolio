@@ -1,0 +1,31 @@
+@media(max-width:768px){
+
+    .nav-links{
+        position:absolute;
+        right:0;
+        top:70px;
+        background:#1e293b;
+        flex-direction:column;
+        width:100%;
+        text-align:center;
+        display:none;
+        padding:20px;
+    }
+
+    .nav-links.active{
+        display:flex;
+    }
+
+    .burger{
+        display:block;
+    }
+
+    .about-container{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .hero h1{
+        font-size:2rem;
+    }
+}
