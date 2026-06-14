@@ -1,126 +1,161 @@
-# Personal Portfolio Website
+# Keshav Karthikeya — Personal Portfolio
 
-## Project Description
-A responsive personal portfolio website showcasing skills,
-projects and contact information using HTML5, CSS3 and JavaScript.
+## About
+
+Personal portfolio website for **Andamdas Keshav Karthikeya**, a second-year B.Tech Computer Science & Engineering (Cyber Security) student at Geethanjali College of Engineering and Technology, Hyderabad (2024–2028).
+
+Built with pure HTML5, CSS3 and JavaScript — no frameworks, no dependencies.
+
+---
+
+## Live Sections
+
+| Section | Description |
+|---|---|
+| **Hero** | Name, role, location and call-to-action buttons |
+| **About** | Professional summary, college details, strength badges |
+| **Technical Skills** | HTML5, CSS3, JavaScript, Python, Java, Git & GitHub |
+| **Projects** | Sentinel AI, Smart Bluetooth Pendrive, QR Attendance System |
+| **Experience & Achievements** | Internship, hackathon win, Kaggle certification |
+| **Contact** | Phone, email, location and contact form |
+
+---
+
+## Projects Showcased
+
+### Sentinel AI
+Mobile Security & Privacy Engine (Android / Kotlin / Google ML Kit)
+- Real-time QR-based malicious URL detection using on-device ML Kit inference
+- Dynamic Risk Evaluation Engine for continuous security monitoring and scoring
+
+### Smart Bluetooth Pendrive
+Wireless file transfer device (ESP32-CAM / WiFi / Web Server / C)
+- Won **1st Prize** at ROBOGEN 5-Day Hackathon — IEEE Club, Geethanjali College
+- ESP32-CAM hosts its own WiFi network; no app or USB required
+
+### Quick Attend — QR Attendance System
+Smart attendance management (QR Code / JavaScript / SQLite / Face Recognition)
+- Faculty generate unique session QR codes; students scan and verify identity
+- Real-time database updates, automated reporting, prevents proxy attendance
+
+---
 
 ## Features
 
-- Responsive Design
-- Semantic HTML5 Structure
-- CSS Grid and Flexbox
-- Mobile Navigation Menu
-- Contact Form Validation
-- Hover Effects and Animations
-- Accessibility Support
+- ✅ Fully responsive — Mobile, Tablet and Desktop
+- ✅ Smooth mobile navigation with burger menu
+- ✅ Sticky frosted-glass navbar on scroll
+- ✅ Professional dark hero with parallax background
+- ✅ Vertical timeline for Experience & Achievements
+- ✅ Animated project cards with hover zoom
+- ✅ Contact form with native browser validation
+- ✅ Semantic HTML5 and accessibility-friendly markup
+- ✅ CSS custom properties (design tokens via `variables.css`)
+- ✅ Smooth scroll and micro-animations
+
+---
 
 ## Technologies Used
 
 - HTML5
-- CSS3
-- JavaScript
+- CSS3 (Flexbox, CSS Grid, Custom Properties)
+- JavaScript (vanilla)
+- Google Fonts — Inter
 - Git & GitHub
 
-## Setup Instructions
-
-Prerequisites:
-
-- Git
-- A modern browser (Chrome, Firefox, Edge, Safari)
-- Node or Python (optional simple servers)
-
-Steps to run locally:
-
-1. Clone the repository:
-
-```bash
-git clone <repo-url>
-cd week1-portfolio
-```
-
-2. Open in VS Code and use Live Server extension, or run a simple HTTP server:
-
-Python 3 (built-in):
-
-```bash
-python3 -m http.server 8000
-# Open http://localhost:8000 in your browser
-```
-
-Node (http-server):
-
-```bash
-npm install -g http-server
-http-server -p 8000
-# Open http://localhost:8000
-```
-
-3. Browse to `index.html` (or the server URL) to view the site.
+---
 
 ## Folder Structure
 
+```
 week1-portfolio/
-├── index.html
+├── index.html            ← Main page (all sections)
 ├── css/
+│   ├── variables.css     ← Design tokens (colors, fonts, spacing)
+│   ├── style.css         ← Base styles and component styles
+│   └── responsive.css    ← Breakpoints: 992px, 768px, 480px
 ├── js/
+│   └── navigation.js     ← Mobile menu toggle + scroll-aware header
 ├── images/
-├── README.md
-└── .gitignore
-
-## Testing
-
-- Tested on Chrome
-- Tested on Edge
-- Tested on Firefox
-- Responsive on Mobile, Tablet and Desktop
-
-## Screenshots
-
-Hero section:
-
-![Hero](images/hero.jpeg)
-
-Project sample:
-
-![Project 1](images/project1.jpeg)
-
-Profile:
-
-![Profile](images/profile.png)
-
-## Technical Details
-
-- HTML: semantic structure with sections for `hero`, `about`, `skills`, `projects`, and `contact` in `index.html`.
-- CSS: styles split across `css/variables.css` (theme tokens), `css/style.css` (base styles), and `css/responsive.css` (breakpoints and responsive rules). Layouts use CSS Grid and Flexbox for the project and skills sections.
-- Images: included in `images/` with optimized JPEG/PNG assets used as content and thumbnails.
-- JavaScript: `js/navigation.js` implements a simple mobile menu toggle:
-
-```js
-const burger = document.querySelector(".burger");
-const nav = document.querySelector(".nav-links");
-burger.addEventListener("click", () => nav.classList.toggle("active"));
+│   ├── profile.png       ← Profile photo
+│   ├── hero-bg.png       ← Hero section background
+│   ├── project1.jpeg     ← Sentinel AI thumbnail
+│   ├── project2.jpeg     ← Smart Bluetooth Pendrive thumbnail
+│   ├── project3.jpeg     ← QR Attendance System thumbnail
+│   └── icons/            ← Skill icons (html5, css3, javascript, python, java, github)
+└── README.md
 ```
 
-- Accessibility: meaningful `alt` text is present for images; navigation uses semantic HTML; ensure color contrast when customizing variables.
+---
 
-## Testing Evidence and Validation
+## Setup — Run Locally
 
-Manual test cases performed (results):
+**Prerequisites:** A modern browser (Chrome, Firefox, Edge, Safari)
 
-- Viewport responsiveness: 375x812 (mobile) — PASS
-- Tablet: 768x1024 — PASS
-- Desktop: 1280x800 — PASS
-- Browsers: Chrome (latest) — PASS, Firefox (latest) — PASS, Edge (latest) — PASS
-- Form validation: browser-native validation prevents empty submission and enforces `type="email"` — PASS
-- Keyboard navigation: can tab through links and form controls — PASS
-- Images: all referenced image files exist in `images/` — PASS
+**Option 1 — Open directly:**
+```bash
+open index.html
+# or just double-click index.html
+```
 
-Suggested validation steps to add for reproducibility:
+**Option 2 — Python simple server (recommended):**
+```bash
+python3 -m http.server 8000
+# Open http://localhost:8000
+```
 
-1. List the exact browser versions tested (e.g., Chrome 114.0) and OS environment.
-2. Add viewport screenshots for each breakpoint and include them in this README (or `docs/screenshots/`).
-3. Run an automated accessibility check (Lighthouse or axe) and paste key results.
+**Option 3 — Node http-server:**
+```bash
+npx http-server -p 8000
+# Open http://localhost:8000
+```
+
+**Option 4 — VS Code Live Server:**
+Right-click `index.html` → *Open with Live Server*
+
+---
+
+## Responsive Breakpoints
+
+| Breakpoint | Target |
+|---|---|
+| `max-width: 992px` | Tablet |
+| `max-width: 768px` | Mobile phones |
+| `max-width: 480px` | Small phones (375px and below) |
+
+Key mobile behaviours:
+- Burger menu replaces horizontal nav links
+- Hero uses `min-height: 100svh` for notched phones
+- About image and text stack vertically
+- Skills grid switches to 2 columns
+- Project cards go single column
+- Timeline shrinks gracefully
+- Contact info and form stack vertically
+- Long email address wraps with `word-break: break-word`
+
+---
+
+## Browser Testing
+
+| Browser | Status |
+|---|---|
+| Chrome (latest) | ✅ PASS |
+| Firefox (latest) | ✅ PASS |
+| Edge (latest) | ✅ PASS |
+| Safari (macOS) | ✅ PASS |
+| Mobile Chrome (Android) | ✅ PASS |
+| Mobile Safari (iOS) | ✅ PASS |
+
+Viewport sizes tested:
+- 375 × 812 — iPhone SE / 14 (mobile)
+- 768 × 1024 — iPad (tablet)
+- 1280 × 800 — Standard laptop
+- 1920 × 1080 — Full HD desktop
+
+---
 
 ## Author
 
-Keshav
+**Andamdas Keshav Karthikeya**
+B.Tech CSE (Cyber Security) — Geethanjali College of Engineering and Technology, Hyderabad
+📞 +91 8790523785 | ✉ andamdaskeshavkarthikeya@gmail.com# prortfolio
