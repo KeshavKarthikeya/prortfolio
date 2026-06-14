@@ -1,26 +1,35 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Andamdas Keshav Karthikeya — B.Tech CSE (Cyber Security) student, Android developer, AI enthusiast and IoT builder based in Hyderabad, India.">
 
-    <title>Keshav | Portfolio</title>
+    <title>Keshav Karthikeya | Portfolio</title>
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="images/icons/favicon.ico">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
 
     <!-- CSS Files -->
     <link rel="stylesheet" href="css/variables.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
+
 <body>
 
     <!-- Header -->
-    <header>
+    <header id="header">
         <nav class="navbar">
-            <div class="logo">A</div>
+            <div class="logo">KK</div>
 
             <ul class="nav-links">
                 <li><a href="#hero">Home</a></li>
@@ -42,193 +51,259 @@
     <main>
 
         <!-- Hero Section -->
-        <section id="hero" class="hero"
-                style="
-                background:
-                linear-gradient(
-                rgba(0,0,0,0.6),
-                rgba(0,0,0,0.6)
-                ),
-                url('images/hero.jpeg');
-                background-size:cover;
-                background-position:center;
-                background-repeat:no-repeat;
-                color:white;
-                ">
+        <section id="hero" class="hero">
             <div class="hero-content">
-                <h1>Hello, I'm Keshav</h1>
-                <p>Full Stack Web Developer</p>
-                <a href="#projects" class="btn">View My Work</a>
+                <p class="hero-greeting">Hello, I'm</p>
+                <h1>Keshav Karthikeya</h1>
+                <p class="hero-tagline">B.Tech CSE (Cyber Security)</p>
+                <p class="hero-location">📍 Hyderabad, India</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-outline">Contact Me</a>
+                </div>
             </div>
         </section>
 
         <!-- About Section -->
         <section id="about">
-            <h2>About Me</h2>
+            <h2 class="section-title">About Me</h2>
+            <div class="section-underline"></div>
 
             <div class="about-container">
-                <img src="images/profile.png"
-                     alt="Abinav Profile Picture">
+                <img src="images/profile.png" alt="Keshav Karthikeya Profile Picture">
 
-                <div>
+                <div class="about-text">
                     <p>
-                        I am a passionate Full Stack Web Developer with
-                        experience in HTML, CSS, JavaScript, React and
-                        modern web technologies. I enjoy building
-                        responsive, user-friendly and accessible websites
-                        that provide excellent user experiences.
+                        I am a second-year <strong>B.Tech Computer Science &amp; Engineering (Cyber Security)</strong>
+                        student
+                        at Geethanjali College of Engineering and Technology, Hyderabad (2024–2028).
                     </p>
+                    <p>
+                        I have a strong foundation in programming and software development with hands-on experience in
+                        <strong>AI-powered systems</strong>, and exposure to
+                        <strong>IoT concepts</strong>. Passionate about building secure, real-world applications and
+                        solving
+                        complex problems.
+                    </p>
+                    <div class="about-badges">
+                        <span class="badge">Problem Solver</span>
+                        <span class="badge">Creative Thinker</span>
+                        <span class="badge">Quick Learner</span>
+                        <span class="badge">Adaptable</span>
+                        <span class="badge">Hands-on Builder</span>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Skills Section -->
         <section id="skills">
-            <h2>Skills</h2>
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="section-underline"></div>
 
             <div class="skills-grid">
 
                 <div class="skill-card">
-                    <img src="images/icons/html5.jpeg"
-                         alt="HTML5 Icon"
-                         width="60">
+                    <img src="images/icons/html5.jpeg" alt="HTML5 Icon" width="60">
                     <h3>HTML5</h3>
                 </div>
 
                 <div class="skill-card">
-                    <img src="images/icons/css3.jpeg"
-                         alt="CSS3 Icon"
-                         width="60">
+                    <img src="images/icons/css3.jpeg" alt="CSS3 Icon" width="60">
                     <h3>CSS3</h3>
                 </div>
 
                 <div class="skill-card">
-                    <img src="images/icons/javascript.jpeg"
-                         alt="JavaScript Icon"
-                         width="60">
+                    <img src="images/icons/javascript.jpeg" alt="JavaScript Icon" width="60">
                     <h3>JavaScript</h3>
                 </div>
 
                 <div class="skill-card">
-    <img src="images/icons/react.jpeg"
-         alt="React Icon"
-         width="60">
-    <h3>React</h3>
-</div>
+                    <img src="images/icons/python.jpeg" alt="Python Icon" width="60">
+                    <h3>Python</h3>
+                </div>
 
-<div class="skill-card">
-    <img src="images/icons/nodejs.jpeg"
-         alt="Node.js Icon"
-         width="60">
-    <h3>Node.js</h3>
-</div>
+                <div class="skill-card">
+                    <img src="images/icons/java.jpeg" alt="Java Icon" width="60">
+                    <h3>Java</h3>
+                </div>
 
-<div class="skill-card">
-    <img src="images/icons/github.jpeg"
-         alt="GitHub Icon"
-         width="60">
-    <h3>Git & GitHub</h3>
-</div>
+                <div class="skill-card">
+                    <img src="images/icons/github.jpeg" alt="Git & GitHub Icon" width="60">
+                    <h3>Git &amp; GitHub</h3>
+                </div>
             </div>
         </section>
 
         <!-- Projects Section -->
         <section id="projects">
-            <h2>Projects</h2>
+            <h2 class="section-title">Projects</h2>
+            <div class="section-underline"></div>
 
             <div class="project-grid">
 
                 <article class="project-card">
-                    <img src="images/project1.jpeg"
-                         alt="E-Commerce Website">
-
-                    <h3>E-Commerce Website</h3>
-
-                    <p>
-                        Built using HTML, CSS and JavaScript with
-                        responsive design principles.
-                    </p>
+                    <img src="images/project1.jpeg" alt="Sentinel AI — Mobile Security & Privacy Engine">
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="tag">Android</span>
+                            <span class="tag">Kotlin</span>
+                            <span class="tag">Google ML Kit</span>
+                        </div>
+                        <h3>Sentinel AI</h3>
+                        <p>
+                            Mobile Security &amp; Privacy Engine with real-time QR-based malicious URL detection using
+                            on-device ML Kit inference. Features a dynamic Risk Evaluation Engine for continuous
+                            security monitoring and scoring.
+                        </p>
+                    </div>
                 </article>
 
                 <article class="project-card">
-                    <img src="images/project2.jpeg"
-                         alt="Portfolio Website">
-
-                    <h3>Portfolio Website</h3>
-
-                    <p>
-                        Personal portfolio website showcasing projects,
-                        skills and achievements.
-                    </p>
+                    <img src="images/project2.jpeg" alt="Smart Bluetooth Pendrive">
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="tag">ESP32-CAM</span>
+                            <span class="tag">WiFi</span>
+                            <span class="tag">Web Server</span>
+                            <span class="tag">C</span>
+                        </div>
+                        <h3>Smart Bluetooth Pendrive</h3>
+                        <p>
+                            ESP32-CAM hosts its own WiFi network — connect any device and upload files directly via
+                            browser. No app or USB required — fully browser-based with device-level access control.
+                        </p>
+                    </div>
                 </article>
 
                 <article class="project-card">
-                    <img src="images/project3.jpeg"
-                         alt="Blog Platform">
-
-                    <h3>Blog Platform</h3>
-
-                    <p>
-                        Content management blog application with
-                        modern UI design.
-                    </p>
+                    <img src="images/project3.jpeg" alt="IoT Projects">
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="tag">QR Code</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">SQLite</span>
+                            <span class="tag">Face Recognition</span>
+                        </div>
+                        <h3>Quick Attend - QR Attendance System</h3>
+                        <p>
+                            Developed a smart attendance management system using QR code technology and face
+                            recognition. Faculty generate unique QR codes for each session, while students scan and
+                            verify their identity to mark attendance. The system stores attendance records in real-time,
+                            reduces manual effort, prevents proxy attendance, and provides automated reporting through a
+                            centralized database.
+                        </p>
+                    </div>
                 </article>
+
+            </div>
+        </section>
+
+        <!-- Experience & Achievements Section -->
+        <section id="experience">
+            <h2 class="section-title">Experience &amp; Achievements</h2>
+            <div class="section-underline"></div>
+
+            <div class="timeline">
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">March 2026</span>
+                        <h3>AI Image Annotation Intern</h3>
+                        <p class="timeline-company">Student Tribe</p>
+                        <p>Annotated datasets for AI model training and contributed to data preprocessing pipelines.
+                            Maintained accuracy and quality standards across large-scale annotation tasks.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot timeline-dot-gold"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">August 2025</span>
+                        <h3>🏆 1st Prize — ROBOGEN 5-Day Hackathon</h3>
+                        <p class="timeline-company">IEEE Club, Geethanjali College of Engineering and Technology</p>
+                        <p>Won 1st place for Byte-Bolt, a smart wireless file transfer device built using ESP32-CAM.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot timeline-dot-green"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">December 2025</span>
+                        <h3>Google Kaggle — 5-Day AI Agents Intensive Certification</h3>
+                        <p class="timeline-company">Kaggle (Google)</p>
+                        <p>Earned Kaggle certification for completing the 5-Day AI Agents Intensive, gaining hands-on
+                            experience in AI agents and machine learning workflows.</p>
+                    </div>
+                </div>
 
             </div>
         </section>
 
         <!-- Contact Section -->
         <section id="contact">
-            <h2>Contact Me</h2>
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="section-underline"></div>
 
-            <form>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <span class="contact-icon">📞</span>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+91 8790523785</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">✉️</span>
+                        <div>
+                            <h4>Email</h4>
+                            <p>andamdaskeshavkarthikeya@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📍</span>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Hyderabad, India</p>
+                        </div>
+                    </div>
+                </div>
 
-                <label for="name">Name</label>
-                <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    required
-                    minlength="3">
+                <form id="contact-form">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your full name" required minlength="3">
 
-                <label for="email">Email</label>
-                <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    required>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="your@email.com" required>
 
-                <label for="message">Message</label>
-                <textarea
-                    id="message"
-                    name="message"
-                    rows="5"
-                    required></textarea>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Write your message here..."
+                        required></textarea>
 
-                <button type="submit" class="btn">
-                    Send Message
-                </button>
-
-            </form>
+                    <button type="submit" class="btn btn-primary" id="submit-btn">
+                        Send Message
+                    </button>
+                </form>
+            </div>
         </section>
 
     </main>
 
     <!-- Footer -->
     <footer>
-
-        <p>&copy; 2026 Keshav. All Rights Reserved.</p>
+        <p>&copy; 2026 Andamdas Keshav Karthikeya. All Rights Reserved.</p>
 
         <div class="social-links">
-        <a href="#" aria-label="GitHub">GitHub</a>
-        <a href="#" aria-label="LinkedIn">LinkedIn</a>
-        <a href="#" aria-label="Twitter">Twitter</a>
-    </div>
-
+            <a href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+            <a href="mailto:andamdaskeshavkarthikeya@gmail.com" aria-label="Email">Email</a>
+        </div>
     </footer>
 
     <script src="js/navigation.js"></script>
 
 </body>
+
 </html>
-```

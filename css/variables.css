@@ -1,9 +1,35 @@
+
 :root{
+
+    /* Main Colors */
     --primary:#2563eb;
+    --primary-hover:#1d4ed8;
+    --primary-light:rgba(37,99,235,0.12);
+
+    /* Dark Theme Colors */
     --secondary:#1e293b;
+    --dark:#0f172a;
+    --dark-card:#1e293b;
+
+    /* Light Theme Colors */
     --light:#f8fafc;
-    --dark:#111827;
     --white:#ffffff;
 
-    --font:'Segoe UI',sans-serif;
+    /* Text Colors */
+    --text-primary:#1f2937;
+    --text-secondary:#6b7280;
+    --text-light:#94a3b8;
+
+    /* Effects */
+    --shadow:0 4px 20px rgba(0,0,0,0.08);
+    --shadow-hover:0 12px 40px rgba(37,99,235,0.15);
+    --radius:12px;
+    --radius-sm:8px;
+
+    /* Fonts */
+    --font:'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    /* Spacing */
+    --section-padding:100px 10%;
+    --transition:all 0.3s ease;
 }
